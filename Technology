@@ -1,0 +1,5 @@
+In Devnet this can be located in Collaboration.
+
+This script will test older gateways for UCCE 10.x and 11.x.
+
+It can also apply to UCCE 12.x solutions that have not deployed VVBs and the VXML is still configured on the gateway.
