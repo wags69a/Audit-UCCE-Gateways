@@ -4,7 +4,7 @@ import time
 import sys
 import subprocess
 import netmiko
-# script by Michael A Wagner Cisco AS
+# script by Michael A Wagner Cisco TTG
 # if you change the txt name here, you also have to do it at the end of this script
 fd = open(r'C:\python\devnetlab1.txt', 'w')
 old_stdout = sys.stdout
@@ -12,33 +12,33 @@ sys.stdout = fd
 
 gw1 = {
     'device_type': 'cisco_ios',
-    'ip': '198.18.133.226',
+    'ip': 'A.B.C.D',
     'username': 'admin',
-    'password': 'C1sco12345',
+    'password': 'XXXX',
     'verbose': False,
 }
 # for 2nd gateway test
 # gw2 = {
 #    'device_type': 'cisco_ios',
-#    'ip': '172.20.58.212',
+#    'ip': 'A.B.C.D',
 #    'username': 'admin',
-#    'password': 'B9vacolab810!',
+#    'password': 'XXXX',
 #    'verbose': False,
 # }
 
 # gw3 = {
 #    'device_type': 'cisco_ios',
-#    'ip': '198.18.133.143',
+#    'ip': 'A.B.C.D',
 #    'username': 'administrator',
-#    'password': 'dCloud!23',
+#    'password': 'XXXX',
 #    'verbose': False,
 # }
 
 gw4 = {
     'device_type': 'cisco_ios',
-    'ip': '10.10.20.250',
+    'ip': 'A.B.C.D',
     'username': 'administrator',
-    'password': 'ciscopsdt',
+    'password': 'XXXX',
     'verbose': False,
 }
 
@@ -187,7 +187,7 @@ try:
         output = net_connect.send_command('show http cl stat')
         print(output)
         print()
-        # reference https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp11_6/configuration/guide/ccvp_b_configuration-guide-for-cisco-unified/ccvp_b_configuration-guide-for-cisco-unified_chapter_01011.html
+        # 
         print('Best practice for CVP has bind commands under voice service voip')
         output = net_connect.send_command('show run | inc bind')
         if len(output) == 0:
@@ -397,16 +397,6 @@ try:
         output = net_connect.send_command('show process cpu history')
         print(output)
 # Cisco IOS-XE doesn't do VVB, check to see if GW is IOS-XE. Need another then
-# VVB doesn't support media streaming
-# max cache size for VVB is 512 MB
-# MAW
-# VVB doesn't support video calls
-# VVB doesn't work in IPv6
-# VVB doesn't support RTSP Streaming
-# VVB doesn't support RSM
-# VVB doesn't support video in queue
-# VVB check x-cisco-rai commands
-
         print()
         print(">>>>>>>>> End <<<<<<<<<")
 except netmiko.ssh_exception.NetMikoTimeoutException as n:
