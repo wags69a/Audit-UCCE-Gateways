@@ -26,3 +26,6 @@ OAMP gateway templates are also used.
 #Best Practice
 The above guides gave the guidance for the best practice audit commands.
 Try is script in your lab or dCloud first so you can get used to it. Do not try it first in front of the customer as all errors for different environments are not thought of here.
+
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wags69a/Audit-UCCE-Gateways)
