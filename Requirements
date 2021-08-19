@@ -1,0 +1,8 @@
+These libraries are needed to run this script.
+
+from netmiko import ConnectHandler
+from datetime import datetime
+import time
+import sys
+import subprocess
+import netmiko
