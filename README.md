@@ -27,5 +27,14 @@ OAMP gateway templates are also used.
 The above guides gave the guidance for the best practice audit commands.
 Try is script in your lab or dCloud first so you can get used to it. Do not try it first in front of the customer as all errors for different environments are not thought of here.
 
+#Step by step
+1) Down load Audit-UCCE-Gateways code from GitHub.
+2) Import requirements
+3) Verify connection to the gateways that you want to audit.
+4) Put the IP address, username and password in the script.
+5) Run the script
+6) Troubleshoot any access errors.
+7) Look at the results via notepad.
+8) Fix anything that the audit finds, as long as it fits your version.
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wags69a/Audit-UCCE-Gateways)
