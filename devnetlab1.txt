@@ -1,0 +1,1130 @@
+
+This is the start of the proof of test for Cisco dCloud Labs.
+
+
+The report started at: 2019-11-18 08:21:46.357122
+
+
+>>>>>>>>> Device 198.18.133.226 <<<<<<<<<
+Is the gateway in enable mode: True
+The gateway prompt: CC-VCUBE#
+
+This is a list of wav files located in flash:
+
+494     138648 Nov 18 2016 15:50:24.0000000000 +00:00 /bootflash/robot_agent.wav
+495     126454 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/holdmusic.wav
+497      32110 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/ringback.wav
+498      58446 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/critical_error.wav
+501      26582 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/pleasewait.wav
+505      86164 Sep 19 2017 13:21:59.0000000000 +00:00 /bootflash/obdest_greeting.wav
+514       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_0.wav
+515       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_1.wav
+516       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_2.wav
+517       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_3.wav
+518       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_4.wav
+519       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_5.wav
+520       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_6.wav
+521       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_7.wav
+522       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_8.wav
+523       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_9.wav
+524       2380 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_pound.wav
+525       2458 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/en_star.wav
+
+This is a list of tcl files located in flash:
+
+491      12206 Nov 18 2016 15:47:10.0000000000 +00:00 /bootflash/traffic.tcl
+492       2918 Nov 18 2016 15:47:20.0000000000 +00:00 /bootflash/traffic_call.tcl
+493       8132 Nov 18 2016 15:47:33.0000000000 +00:00 /bootflash/robodest.tcl
+496       7944 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/ringtone.tcl
+499       1833 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvperror.tcl
+500     155217 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/survivability.tcl
+502       8970 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_videoconnect.tcl
+504      26882 Sep 19 2017 12:22:40.0000000000 +00:00 /bootflash/obdest.tcl
+506      18666 Oct 30 2017 20:45:32.0000000000 +00:00 /bootflash/cvp_gwfeature.tcl
+507      23815 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/bootstrap.tcl
+509       5417 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_dial.tcl
+510       6993 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_poll.tcl
+511       8836 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_vxml.tcl
+512      29552 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/CVPSelfService.tcl
+526       1434 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/handoff.tcl
+530       5156 May 02 2018 16:06:24.0000000000 +00:00 /bootflash/startup_testcall.tcl
+
+This is a list of bin files located in flash:
+
+ 16  448555196 May 02 2018 16:00:47.0000000000 +00:00 /bootflash/csr1000v-universalk9.16.06.03.SPA.bin
+ 29    1048576 May 02 2018 16:10:15.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.28541_0.20180501215018.bin
+ 30       8192 May 01 2018 22:30:54.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.16214_0.20180501214933.bin
+ 31     524288 May 02 2018 16:28:41.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.14764_0.20180501214932.bin
+ 32    1048576 May 01 2018 22:07:38.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.14958_0.20180501214936.bin
+ 33       8192 May 01 2018 22:30:54.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.16214_1.20180501223054.bin
+ 34       8192 May 02 2018 16:39:33.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.14321_0.20180501214930.bin
+ 36       8192 May 01 2018 21:49:30.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.13634_0.20180501214929.bin
+ 37    1048576 Mar 10 2018 03:07:38.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.28723_0.20180301234043.bin
+ 38       1944 May 02 2018 18:04:46.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.22015_0.20180502180445.bin.gz
+ 39     131072 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.13986_0.20180501214929.bin
+ 40       8192 Feb 01 2018 07:26:23.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.14722_0.20180201053341.bin
+ 41     131072 May 02 2018 16:39:32.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.15397_0.20180501214932.bin
+ 42       8192 Mar 15 2018 07:06:32.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.17961_6.20180314102435.bin
+ 43     131072 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.14822_0.20180501214930.bin
+ 44     131072 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.14381_0.20180201053341.bin
+ 45     131072 Mar 17 2018 02:18:38.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.15530_51.20180316195544.bin
+ 46     131072 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.15229_0.20180201053342.bin
+ 47    1048576 Feb 01 2018 05:34:55.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.16222_0.20180201053345.bin
+ 48       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.15703_0.20180201053342.bin
+ 49    1048576 Feb 01 2018 05:34:44.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.16929_0.20180201053410.bin
+ 50       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.16055_0.20180201053343.bin
+ 51    1048576 Feb 01 2018 07:26:30.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.17229_0.20180201053345.bin
+ 52       8192 Feb 01 2018 07:26:32.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.16765_0.20180201053344.bin
+ 53    1048576 Feb 01 2018 05:34:17.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.18113_0.20180201053347.bin
+ 54       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.17795_0.20180201053346.bin
+ 55    1048576 Feb 01 2018 07:26:22.0000000000 +00:00 /bootflash/tracelogs/nginx31701_R0-0.31701_0.20180201053504.bin
+ 56       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.31366_0.20180201053504.bin
+ 57       8192 Feb 01 2018 05:34:01.0000000000 +00:00 /bootflash/tracelogs/periodic_R0-0.27625_0.20180201053401.bin
+ 58       8192 Feb 01 2018 05:33:47.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.18477_0.20180201053346.bin
+ 59    1048576 Feb 01 2018 05:34:26.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.19321_0.20180201053349.bin
+ 60       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.18782_0.20180201053347.bin
+ 61    1048576 Feb 01 2018 05:34:44.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.19555_0.20180201053349.bin
+ 62       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.19148_0.20180201053347.bin
+ 63     131072 Feb 01 2018 07:26:23.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.13577_0.20180201053340.bin
+ 64    1048576 Feb 01 2018 06:37:54.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.20489_0.20180201053358.bin
+ 65       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.19924_0.20180201053348.bin
+ 66    1048576 Feb 01 2018 05:34:46.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.20953_0.20180201053359.bin
+ 67       8192 Feb 01 2018 07:26:29.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.20238_0.20180201053348.bin
+ 68       8192 Feb 01 2018 05:33:49.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.20598_0.20180201053349.bin
+ 69    1048576 Feb 01 2018 05:34:54.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.21595_0.20180201053401.bin
+ 70       8192 Feb 01 2018 05:34:46.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.21210_0.20180201053350.bin
+ 71    1048576 May 01 2018 21:50:44.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.15836_0.20180501214934.bin
+ 72       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.15320_0.20180501214931.bin
+ 73    1048576 May 01 2018 21:50:40.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.16602_0.20180501215000.bin
+ 74       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.15660_0.20180501214932.bin
+ 75    1048576 May 02 2018 16:39:32.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.16833_0.20180501214934.bin
+ 76       8192 May 02 2018 16:39:42.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.16353_0.20180501214933.bin
+ 77    1048576 May 02 2018 16:39:33.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.17720_0.20180501214938.bin
+ 78    1048576 Mar 17 2018 01:52:50.0000000000 +00:00 /bootflash/tracelogs/fman_fp_F0-0.27887_38.20180316163352.bin
+ 79     524288 Mar 16 2018 20:08:10.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.14938_14.20180315214554.bin
+ 80       8192 May 01 2018 21:49:19.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.6354_0.20180501214919.bin
+ 81    1048576 May 01 2018 21:49:17.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.5364_0.20180501214917.bin
+ 82      88204 Jul 01 2019 20:48:52.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.3915_1.20190626112922.bin.gz
+ 83       2072 Jun 01 2019 10:01:07.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.21994_0.20190601100106.bin.gz
+ 84       8192 May 01 2018 21:49:16.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.5310_0.20180501214916.bin
+ 85       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.17395_0.20180501214934.bin
+ 86    1048576 May 02 2018 16:39:32.0000000000 +00:00 /bootflash/tracelogs/nginx31153_R0-0.31153_0.20180501215059.bin
+ 87       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.30813_0.20180501215059.bin
+ 88       8192 May 01 2018 21:49:50.0000000000 +00:00 /bootflash/tracelogs/periodic_R0-0.27522_0.20180501214950.bin
+ 89       8192 May 01 2018 21:49:36.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.18075_0.20180501214935.bin
+ 90    1048576 May 01 2018 21:50:14.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.18913_0.20180501214939.bin
+ 91       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.18390_0.20180501214936.bin
+ 92    1048576 May 01 2018 21:49:50.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.19141_0.20180501214940.bin
+ 93       1468 Jul 02 2019 08:30:51.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7380_0.20190702083051.bin.gz
+ 94      52117 Jul 03 2019 17:05:51.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.4015_0.20190702083046.bin.gz
+ 95       8192 May 01 2018 21:49:19.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.6606_0.20180501214919.bin
+ 96       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.18748_0.20180501214936.bin
+ 97       8192 May 01 2018 21:49:19.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.6356_0.20180501214919.bin
+ 98     131072 May 02 2018 16:39:33.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.13175_0.20180501214929.bin
+ 99    1048576 May 01 2018 21:50:38.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.20081_0.20180501214950.bin
+100       8192 May 02 2018 16:40:58.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.16389_0.20180502164058.bin
+101       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.19524_0.20180501214937.bin
+102    1048576 May 02 2018 18:03:01.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.28594_0.20180502164153.bin
+103    1048576 May 01 2018 21:50:42.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.20535_0.20180501214949.bin
+105       8192 May 02 2018 16:39:39.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.19841_0.20180501214937.bin
+106    1048576 May 02 2018 17:59:25.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.14953_0.20180502164102.bin
+107       8192 May 01 2018 21:49:38.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.20204_0.20180501214937.bin
+108    1048576 May 01 2018 21:50:41.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.21153_0.20180501214950.bin
+109       8192 May 02 2018 16:40:43.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.6342_0.20180502164043.bin
+110       8192 May 02 2018 18:03:06.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.14316_0.20180502164054.bin
+111       8192 May 02 2018 18:03:06.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.16794_9.20180502180306.bin
+112       8192 May 01 2018 21:50:41.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.20793_0.20180501214939.bin
+113       1463 Jun 20 2019 10:05:16.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7381_0.20190620100516.bin.gz
+114    1048576 May 02 2018 16:40:42.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.5363_0.20180502164042.bin
+115        412 Jun 20 2019 10:04:20.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9155_0.20190620100420.bin.gz
+116       1937 May 03 2018 00:15:22.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.22016_0.20180503001521.bin.gz
+117       8192 May 02 2018 16:40:54.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.13637_0.20180502164054.bin
+118       8192 May 02 2018 16:40:41.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.5311_0.20180502164041.bin
+119       8192 May 02 2018 16:40:44.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.6569_0.20180502164044.bin
+120       8192 May 02 2018 16:40:43.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.6353_0.20180502164043.bin
+121     524288 May 02 2018 17:59:24.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.14743_0.20180502164056.bin
+122     131072 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.13973_0.20180502164054.bin
+123     131072 May 02 2018 17:59:24.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.15401_0.20180502164057.bin
+124     131072 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.14826_0.20180502164055.bin
+125    1048576 May 02 2018 16:42:11.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.15827_0.20180502164059.bin
+126       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.15307_0.20180502164056.bin
+127    1048576 May 02 2018 16:42:13.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.16613_0.20180502164127.bin
+128       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.15660_0.20180502164056.bin
+129    1048576 May 02 2018 16:42:31.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.16827_0.20180502164059.bin
+130       2154 Jun 20 2019 10:04:35.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.22001_0.20190620100434.bin.gz
+131      51647 Jun 08 2019 08:02:57.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.3852_1.20190606013533.bin.gz
+132       1625 Jul 01 2019 20:49:35.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.19688_0.20190701204934.bin.gz
+133    1048576 May 01 2018 21:49:18.0000000000 +00:00 /bootflash/tracelogs/cman_fp_F0-0.5794_0.20180501214918.bin
+134       8192 May 02 2018 18:03:15.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.16340_0.20180502164058.bin
+135       8192 May 02 2018 16:42:11.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.16794_8.20180502164211.bin
+136       1463 Jun 01 2019 10:01:49.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7379_0.20190601100149.bin.gz
+137       8192 May 02 2018 16:42:07.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.16794_2.20180502164207.bin
+138       8192 May 02 2018 16:42:07.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.16794_3.20180502164207.bin
+139        412 Jul 02 2019 08:29:54.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9160_0.20190702082954.bin.gz
+140    1048576 May 02 2018 16:42:16.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.17716_0.20180502164104.bin
+141       8192 Mar 01 2018 23:39:52.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_F0-0.24554_0.20180301233951.bin
+142       1946 Jul 01 2019 20:50:34.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.21980_0.20190701205033.bin.gz
+143       1634 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4008_0.20190620100525.bin.gz
+144      28567 Jul 02 2019 08:28:13.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.3944_0.20190701205110.bin.gz
+145       1641 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4009_0.20190620100525.bin.gz
+146        872 Jun 20 2019 10:04:34.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21649_0.20190620100434.bin.gz
+147       1634 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4010_0.20190620100525.bin.gz
+148       1634 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4011_0.20190620100525.bin.gz
+149       1635 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4012_0.20190620100525.bin.gz
+150       1636 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4013_0.20190620100525.bin.gz
+151       1463 Jul 01 2019 20:51:16.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7379_0.20190701205116.bin.gz
+152       1635 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4014_0.20190620100525.bin.gz
+153    1048576 May 02 2018 16:40:43.0000000000 +00:00 /bootflash/tracelogs/cman_fp_F0-0.5787_0.20180502164043.bin
+154       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.17396_0.20180502164059.bin
+155    1048576 May 02 2018 18:03:06.0000000000 +00:00 /bootflash/tracelogs/nginx31176_R0-0.31176_0.20180502164232.bin
+156       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.30845_0.20180502164232.bin
+157       8192 May 02 2018 16:41:17.0000000000 +00:00 /bootflash/tracelogs/periodic_R0-0.27556_0.20180502164117.bin
+158       8192 May 02 2018 16:41:01.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.18079_0.20180502164100.bin
+159    1048576 May 02 2018 16:41:39.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.18911_0.20180502164105.bin
+160       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.18379_0.20180502164101.bin
+161    1048576 May 02 2018 16:42:13.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.19149_0.20180502164106.bin
+162       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.18756_0.20180502164101.bin
+163     131072 May 02 2018 18:03:06.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.13175_0.20180502164053.bin
+164    1048576 May 02 2018 16:42:11.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.20093_0.20180502164116.bin
+165       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.19533_0.20180502164102.bin
+166    1048576 May 02 2018 16:42:15.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.20598_0.20180502164115.bin
+167       8192 May 02 2018 18:03:12.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.19841_0.20180502164102.bin
+168       8192 May 02 2018 16:41:03.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.20195_0.20180502164103.bin
+169    1048576 May 02 2018 18:03:03.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.21170_0.20180502164116.bin
+170       8192 May 02 2018 16:42:12.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.20798_0.20180502164104.bin
+171      17166 May 03 2018 00:01:49.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.3730_0.20180502180548.bin.gz
+172       1462 May 02 2018 18:05:21.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7372_0.20180502180521.bin.gz
+173        412 May 02 2018 18:04:26.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9150_0.20180502180426.bin.gz
+174       1649 May 03 2018 00:13:47.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.15693_0.20180503001346.bin.gz
+175        865 May 02 2018 18:04:44.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21655_0.20180502180444.bin.gz
+176        412 Jul 01 2019 20:50:20.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9149_0.20190701205020.bin.gz
+177       1633 Jul 02 2019 08:29:07.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.25880_0.20190702082907.bin.gz
+178       1634 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4030_0.20190701205121.bin.gz
+179        875 Jul 01 2019 20:50:33.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21632_0.20190701205033.bin.gz
+180       1637 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4031_0.20190701205121.bin.gz
+181       1623 Jul 03 2019 17:07:03.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.29066_0.20190703170703.bin.gz
+182       6245 May 03 2018 00:13:37.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22932_0.20180502180451.bin.gz
+183       1727 May 02 2018 18:04:46.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22298_0.20180502180445.bin.gz
+184       6635 May 02 2018 18:22:49.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22843_0.20180502180447.bin.gz
+185       1819 May 02 2018 18:04:24.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8062_0.20180502180424.bin.gz
+186       1633 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4032_0.20190701205121.bin.gz
+187       6704 May 03 2018 00:13:37.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23368_0.20180502180451.bin.gz
+188       1758 May 02 2018 18:04:51.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23531_0.20180502180447.bin.gz
+189       1933 May 03 2018 00:13:43.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22716_0.20180502180446.bin.gz
+190       1637 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4033_0.20190701205121.bin.gz
+191       1634 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4101_0.20190702083056.bin.gz
+192       2608 May 02 2018 18:04:49.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23670_0.20180502180449.bin.gz
+193       1738 May 02 2018 18:04:48.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23166_0.20180502180447.bin.gz
+194       4367 May 02 2018 18:06:01.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24692_0.20180502180515.bin.gz
+195       2582 May 02 2018 18:06:02.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27280_0.20180502180457.bin.gz
+196       3884 May 03 2018 00:13:43.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24502_0.20180502180452.bin.gz
+197       1636 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4015_0.20190620100525.bin.gz
+198       1735 May 02 2018 18:04:51.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24154_0.20180502180450.bin.gz
+199        430 May 02 2018 18:04:42.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.20208_0.20180502180442.bin.gz
+200       1637 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4034_0.20190701205122.bin.gz
+201       1636 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4035_0.20190701205122.bin.gz
+202      16058 Jul 01 2019 20:49:13.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22822_8.20190701121439.bin.gz
+203        410 May 02 2018 18:04:26.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8959_0.20180502180426.bin.gz
+204        436 May 02 2018 18:04:26.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9398_0.20180502180426.bin.gz
+205        725 May 02 2018 18:04:13.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5363_0.20180502180413.bin.gz
+206       3406 May 02 2018 18:05:56.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25558_0.20180502180453.bin.gz
+207        655 May 03 2018 00:13:37.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24690_9.20180503001337.bin.gz
+208       2897 May 02 2018 18:06:25.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5640_0.20180502180624.bin.gz
+209       1735 May 02 2018 18:04:53.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25250_0.20180502180452.bin.gz
+210       2125 May 02 2018 18:04:54.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26434_0.20180502180454.bin.gz
+211       1694 May 03 2018 00:13:43.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5320_0.20180502180623.bin.gz
+212        411 May 02 2018 18:04:22.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7865_0.20180502180422.bin.gz
+213       1698 May 03 2018 00:13:43.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25888_0.20180502180453.bin.gz
+214      25040 May 05 2018 09:04:42.0000000000 +00:00 /bootflash/tracelogs/IOSRP_R0-0.3803_0.20180503001627.bin.gz
+215        866 May 02 2018 18:04:54.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26331_0.20180502180454.bin.gz
+216       1744 May 02 2018 18:04:55.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26674_0.20180502180454.bin.gz
+217       2852 May 02 2018 18:06:03.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.27564_0.20180502180503.bin.gz
+218       1801 May 02 2018 18:04:56.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.27040_0.20180502180455.bin.gz
+219       1066 May 02 2018 18:04:43.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21075_0.20180502180443.bin.gz
+220       6969 May 03 2018 00:13:37.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21207_0.20180502180444.bin.gz
+221       1637 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4036_0.20190701205122.bin.gz
+222       1643 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4037_0.20190701205122.bin.gz
+223      22431 Jul 02 2019 08:29:04.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22806_0.20190701205036.bin.gz
+224       6786 May 02 2018 18:06:09.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.29880_0.20180502180509.bin.gz
+225       1774 May 02 2018 18:04:59.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.28640_0.20180502180457.bin.gz
+226       8866 May 02 2018 18:06:03.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.31324_0.20180502180506.bin.gz
+227       1676 May 02 2018 18:05:02.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.29289_0.20180502180458.bin.gz
+228        880 May 02 2018 18:04:26.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9162_0.20180502180426.bin.gz
+229       1801 May 02 2018 18:05:00.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.30017_0.20180502180459.bin.gz
+230       5834 May 02 2018 18:06:14.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.32548_0.20180502180509.bin.gz
+231       2039 May 02 2018 18:05:05.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.31556_0.20180502180502.bin.gz
+232       1463 May 03 2018 00:15:54.0000000000 +00:00 /bootflash/tracelogs/bhytoolsd_R0-0.7371_0.20180503001554.bin.gz
+233        412 May 03 2018 00:14:59.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9142_0.20180503001459.bin.gz
+234       1621 May 05 2018 09:08:50.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.25085_0.20180505090850.bin.gz
+235        872 May 03 2018 00:15:20.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21657_0.20180503001520.bin.gz
+236        870 Jul 02 2019 08:30:08.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21666_0.20190702083008.bin.gz
+237       1637 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4102_0.20190702083056.bin.gz
+238       1635 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4103_0.20190702083056.bin.gz
+239       1636 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4104_0.20190702083056.bin.gz
+240       1635 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4105_0.20190702083056.bin.gz
+241       1638 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4106_0.20190702083057.bin.gz
+242       6627 May 05 2018 09:06:00.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22945_0.20180503001527.bin.gz
+243       6689 May 04 2018 17:21:18.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22879_0.20180503001524.bin.gz
+244       1643 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4107_0.20190702083057.bin.gz
+245       1827 May 03 2018 00:14:57.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8059_0.20180503001457.bin.gz
+246       7257 May 05 2018 09:06:01.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23397_0.20180503001527.bin.gz
+247       1737 May 03 2018 00:15:22.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22307_0.20180503001521.bin.gz
+248       1754 May 03 2018 00:15:28.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23534_0.20180503001524.bin.gz
+249       1938 May 05 2018 09:08:47.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22724_0.20180503001522.bin.gz
+250       1636 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.4108_0.20190702083057.bin.gz
+251       2608 May 03 2018 00:15:26.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23675_0.20180503001526.bin.gz
+252       1742 May 03 2018 00:15:24.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23164_0.20180503001523.bin.gz
+253       4319 May 03 2018 00:16:41.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24701_0.20180503001555.bin.gz
+254       2449 May 03 2018 00:16:55.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27775_0.20180503001545.bin.gz
+255       4092 May 03 2018 21:00:02.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24502_0.20180503001529.bin.gz
+256       1731 Jul 01 2019 20:50:34.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22265_0.20190701205033.bin.gz
+257       1741 May 03 2018 00:15:28.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24153_0.20180503001526.bin.gz
+258        427 May 03 2018 00:15:17.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.19549_0.20180503001517.bin.gz
+259       6618 Jul 02 2019 08:23:49.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22788_0.20190701205035.bin.gz
+260       3342 Jul 03 2019 17:06:34.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22841_1.20190703162942.bin.gz
+261       2013 Jul 02 2019 08:30:09.0000000000 +00:00 /bootflash/tracelogs/cli_agent_pmanlog_R0-0.22014_0.20190702083008.bin.gz
+262        412 May 03 2018 00:14:59.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8929_0.20180503001459.bin.gz
+263        436 May 03 2018 00:14:59.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9391_0.20180503001459.bin.gz
+264        428 May 03 2018 00:15:11.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.14077_0.20180503001511.bin.gz
+265        426 May 03 2018 00:15:17.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.19509_0.20180503001517.bin.gz
+266        724 May 03 2018 00:14:46.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5357_0.20180503001446.bin.gz
+267       3409 May 03 2018 00:16:35.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25569_0.20180503001531.bin.gz
+268        817 May 05 2018 09:08:40.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24695_9.20180505090840.bin.gz
+269       2903 May 03 2018 00:17:05.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5634_0.20180503001704.bin.gz
+270       1727 May 03 2018 00:15:30.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25258_0.20180503001529.bin.gz
+271       2145 May 03 2018 00:15:32.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26603_0.20180503001532.bin.gz
+272       1703 May 05 2018 09:08:46.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5315_0.20180503001703.bin.gz
+273        411 May 03 2018 00:14:55.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7853_0.20180503001455.bin.gz
+274       1683 May 05 2018 09:08:46.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25895_0.20180503001530.bin.gz
+275        412 Jun 01 2019 10:00:53.0000000000 +00:00 /bootflash/tracelogs/binos_R0-0.9151_0.20190601100053.bin.gz
+276        863 May 03 2018 00:15:31.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26463_0.20180503001531.bin.gz
+277       1748 May 03 2018 00:15:34.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26913_0.20180503001532.bin.gz
+278       2731 May 03 2018 00:16:43.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.28235_0.20180503001546.bin.gz
+279       1760 May 03 2018 00:15:34.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.27360_0.20180503001533.bin.gz
+280       1068 May 03 2018 00:15:19.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21079_0.20180503001519.bin.gz
+281       6969 May 05 2018 09:08:40.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21211_0.20180503001520.bin.gz
+282       6612 Jul 03 2019 17:05:29.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22820_0.20190702083010.bin.gz
+283       1825 Jul 02 2019 08:29:53.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8068_0.20190702082953.bin.gz
+284       1731 Jul 02 2019 08:30:09.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22294_0.20190702083008.bin.gz
+285       6866 May 03 2018 00:16:42.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.30705_0.20180503001548.bin.gz
+286       1790 May 03 2018 00:15:38.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.29478_0.20180503001536.bin.gz
+287       8819 May 03 2018 00:16:43.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.31916_0.20180503001546.bin.gz
+288       1693 May 03 2018 00:15:41.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.30120_0.20180503001537.bin.gz
+289        882 May 03 2018 00:14:59.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9155_0.20180503001459.bin.gz
+290       1806 May 03 2018 00:15:40.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.30787_0.20180503001539.bin.gz
+291       5416 May 03 2018 00:16:46.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.32635_0.20180503001548.bin.gz
+292       1890 May 03 2018 00:15:44.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.32114_0.20180503001542.bin.gz
+293       1644 Jun 08 2019 08:03:12.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_R0-0.1570_0.20190608080312.bin.gz
+294       1636 Jun 01 2019 10:01:55.0000000000 +00:00 /bootflash/tracelogs/cfgwr_R0-0.3948_0.20190601100155.bin.gz
+295        867 Jun 01 2019 10:01:06.0000000000 +00:00 /bootflash/tracelogs/btrace_rotate_sh_pmanlog_R0-0.21639_0.20190601100106.bin.gz
+296      48233 Jun 08 2019 08:02:11.0000000000 +00:00 /bootflash/tracelogs/cli_agent_R0-0.22828_4.20190606232838.bin.gz
+297       1729 Jun 01 2019 10:01:07.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22273_0.20190601100106.bin.gz
+298       6456 Jun 01 2019 10:01:55.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22803_0.20190601100108.bin.gz
+299       1824 Jun 01 2019 10:00:51.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8060_0.20190601100051.bin.gz
+300       5711 Jun 08 2019 08:03:02.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23292_17.20190608042318.bin.gz
+301       1754 Jun 01 2019 10:01:11.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23499_0.20190601100108.bin.gz
+302       2301 Jun 08 2019 08:03:08.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22712_0.20190601100107.bin.gz
+303        920 Jun 01 2019 10:01:56.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8759_2.20190601100156.bin.gz
+304       2593 Jun 01 2019 10:01:09.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23639_0.20190601100109.bin.gz
+305       3728 Jun 04 2019 06:00:00.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24477_0.20190601100111.bin.gz
+306       1737 Jun 01 2019 10:01:09.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23136_0.20190601100108.bin.gz
+307       4422 Jun 01 2019 10:01:54.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24318_0.20190601100115.bin.gz
+308       8566 Jul 03 2019 17:06:03.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23299_3.20190703110548.bin.gz
+309       1737 Jun 01 2019 10:01:11.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24140_0.20190601100110.bin.gz
+310        430 Jun 01 2019 10:01:05.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.20909_0.20190601100105.bin.gz
+311       2041 Jul 02 2019 16:40:03.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22735_0.20190702083009.bin.gz
+312       1787 Jun 01 2019 10:01:16.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.28354_0.20190601100115.bin.gz
+313        436 Jun 01 2019 10:00:53.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9365_0.20190601100053.bin.gz
+314        428 Jun 01 2019 10:01:02.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.17499_0.20190601100102.bin.gz
+315        429 Jun 01 2019 10:01:05.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.20874_0.20190601100105.bin.gz
+316        722 Jun 01 2019 10:00:43.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5360_0.20190601100043.bin.gz
+317        409 Jun 01 2019 10:00:52.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8964_0.20190601100052.bin.gz
+318        876 Jun 08 2019 08:03:02.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24657_9.20190608080302.bin.gz
+319       3264 Jun 01 2019 10:01:13.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25534_0.20190601100112.bin.gz
+320       1735 Jun 01 2019 10:01:12.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25234_0.20190601100112.bin.gz
+321       2886 Jun 01 2019 10:02:16.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5700_0.20190601100215.bin.gz
+322       1684 Jun 08 2019 08:03:08.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5376_0.20190601100215.bin.gz
+323       2124 Jun 01 2019 10:01:13.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26363_0.20190601100113.bin.gz
+324       1690 Jun 08 2019 08:03:08.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25871_0.20190601100112.bin.gz
+325        411 Jun 01 2019 10:00:50.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7881_0.20190601100050.bin.gz
+326        860 Jun 01 2019 10:01:13.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26317_0.20190601100113.bin.gz
+327       4189 Jun 01 2019 10:01:49.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27099_0.20190601100114.bin.gz
+328       1729 Jun 01 2019 10:01:14.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26637_0.20190601100113.bin.gz
+329       2831 Jun 01 2019 10:01:55.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.27275_0.20190601100114.bin.gz
+330       1747 Jun 01 2019 10:01:14.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.26930_0.20190601100114.bin.gz
+331       1059 Jun 01 2019 10:01:05.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21069_0.20190601100105.bin.gz
+332       6958 Jun 08 2019 08:03:02.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21201_0.20190601100105.bin.gz
+333       6785 Jun 01 2019 10:02:25.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.28235_0.20190601100116.bin.gz
+334       1766 Jun 01 2019 10:01:15.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.27684_0.20190601100115.bin.gz
+335       8938 Jun 01 2019 10:01:55.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.28626_0.20190601100117.bin.gz
+336       1680 Jun 01 2019 10:01:16.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.27998_0.20190601100115.bin.gz
+337       1732 Jun 20 2019 10:04:35.0000000000 +00:00 /bootflash/tracelogs/cmand_pmanlog_R0-0.22283_0.20190620100434.bin.gz
+338        880 Jun 01 2019 10:00:53.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9152_0.20190601100053.bin.gz
+339       5323 Jun 01 2019 10:01:56.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.29442_0.20190601100122.bin.gz
+340       1878 Jun 01 2019 10:01:17.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.28911_0.20190601100116.bin.gz
+341       6625 Jul 01 2019 20:49:13.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.22812_0.20190620100436.bin.gz
+342       1822 Jun 20 2019 10:04:18.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8060_0.20190620100418.bin.gz
+343       1429 Jun 20 2019 10:04:19.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8571_0.20190620100419.bin.gz
+344      10766 Jul 01 2019 20:49:13.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23292_28.20190701130649.bin.gz
+345       1745 Jun 20 2019 10:04:39.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23521_0.20190620100436.bin.gz
+346       2508 Jul 01 2019 20:49:31.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22716_0.20190620100435.bin.gz
+347       1396 Jun 20 2019 10:04:58.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8571_1.20190620100441.bin.gz
+348       1031 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8571_2.20190620100525.bin.gz
+349       2592 Jun 20 2019 10:04:37.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23636_0.20190620100437.bin.gz
+350       1728 Jun 20 2019 10:04:37.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23149_0.20190620100436.bin.gz
+351       4316 Jun 20 2019 10:05:23.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24341_0.20190620100445.bin.gz
+352       4157 Jun 20 2019 10:05:19.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27098_0.20190620100442.bin.gz
+353       3750 Jun 22 2019 04:51:04.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24485_0.20190620100439.bin.gz
+354       1722 Jun 20 2019 10:04:39.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24151_0.20190620100438.bin.gz
+355        430 Jun 20 2019 10:04:33.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.20912_0.20190620100433.bin.gz
+356        577 Jun 20 2019 10:04:31.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18437_0.20190620100431.bin.gz
+357        578 Jun 20 2019 10:04:31.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18716_0.20190620100431.bin.gz
+358        409 Jun 20 2019 10:04:20.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8970_0.20190620100420.bin.gz
+359        435 Jun 20 2019 10:04:20.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9345_0.20190620100420.bin.gz
+360        429 Jun 20 2019 10:04:30.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.17111_0.20190620100430.bin.gz
+361        429 Jun 20 2019 10:04:33.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.20876_0.20190620100433.bin.gz
+362        724 Jun 20 2019 10:04:10.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5358_0.20190620100410.bin.gz
+363       3289 Jun 20 2019 10:04:41.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25544_0.20190620100441.bin.gz
+364        877 Jul 01 2019 20:49:25.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24665_9.20190701204925.bin.gz
+365       2889 Jun 20 2019 10:05:46.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5749_0.20190620100545.bin.gz
+366       1742 Jun 20 2019 10:04:40.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25241_0.20190620100440.bin.gz
+367       2128 Jun 20 2019 10:04:42.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26387_0.20190620100442.bin.gz
+368       1696 Jul 01 2019 20:49:31.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5430_0.20190620100545.bin.gz
+369        411 Jun 20 2019 10:04:17.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7884_0.20190620100417.bin.gz
+370       1687 Jul 01 2019 20:49:31.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25882_0.20190620100441.bin.gz
+371       1822 Jul 01 2019 20:50:18.0000000000 +00:00 /bootflash/tracelogs/cmand_R0-0.8060_0.20190701205018.bin.gz
+372        865 Jun 20 2019 10:04:41.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26320_0.20190620100441.bin.gz
+373       1744 Jun 20 2019 10:04:42.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26639_0.20190620100442.bin.gz
+374       2849 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.27290_0.20190620100442.bin.gz
+375       1757 Jun 20 2019 10:04:42.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.26944_0.20190620100442.bin.gz
+376       1061 Jun 20 2019 10:04:33.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21077_0.20190620100433.bin.gz
+377       6952 Jul 01 2019 20:49:25.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21209_0.20190620100433.bin.gz
+378       1699 Jun 20 2019 10:04:25.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8584_0.20190620100419.bin.gz
+379       1337 Jun 20 2019 10:04:54.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8584_1.20190620100444.bin.gz
+380       1283 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8584_2.20190620100524.bin.gz
+381       6767 Jun 20 2019 10:05:52.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.28253_0.20190620100445.bin.gz
+382       1772 Jun 20 2019 10:04:43.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.27685_0.20190620100443.bin.gz
+383       8939 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.28661_0.20190620100445.bin.gz
+384       1684 Jun 20 2019 10:04:44.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.28014_0.20190620100443.bin.gz
+385        880 Jun 20 2019 10:04:20.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9143_0.20190620100420.bin.gz
+386       1799 Jun 20 2019 10:04:44.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.28369_0.20190620100444.bin.gz
+387       5333 Jun 20 2019 10:05:25.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.29521_0.20190620100452.bin.gz
+388       1879 Jun 20 2019 10:04:46.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.28974_0.20190620100445.bin.gz
+389       1409 Jul 01 2019 20:50:19.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_0.20190701205019.bin.gz
+390       6106 Jul 02 2019 08:24:04.0000000000 +00:00 /bootflash/tracelogs/dbm_R0-0.23279_1.20190702045544.bin.gz
+391       1763 Jul 01 2019 20:50:37.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23494_0.20190701205035.bin.gz
+392       2005 Jul 02 2019 04:55:44.0000000000 +00:00 /bootflash/tracelogs/dbm_pmanlog_R0-0.22703_0.20190701205034.bin.gz
+393       1370 Jul 01 2019 20:50:54.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_1.20190701205039.bin.gz
+394       1045 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_2.20190701205122.bin.gz
+395       2598 Jul 01 2019 20:50:36.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23631_0.20190701205036.bin.gz
+396       1740 Jul 01 2019 20:50:35.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23139_0.20190701205034.bin.gz
+397       4420 Jul 01 2019 20:51:20.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24308_0.20190701205041.bin.gz
+398       4135 Jul 01 2019 20:51:16.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27083_0.20190701205040.bin.gz
+399       3636 Jul 02 2019 08:29:00.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24472_0.20190701205038.bin.gz
+400        579 Jul 01 2019 20:50:29.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.17675_0.20190701205029.bin.gz
+401       1744 Jul 01 2019 20:50:37.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24131_0.20190701205037.bin.gz
+402        430 Jul 01 2019 20:50:32.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.20895_0.20190701205032.bin.gz
+403        580 Jul 01 2019 20:50:29.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.17984_0.20190701205029.bin.gz
+404        580 Jul 01 2019 20:50:29.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18284_0.20190701205029.bin.gz
+405        582 Jul 01 2019 20:50:30.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18569_0.20190701205030.bin.gz
+406        409 Jul 01 2019 20:50:19.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8968_0.20190701205019.bin.gz
+407        436 Jul 01 2019 20:50:20.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9377_0.20190701205020.bin.gz
+408        426 Jul 01 2019 20:50:29.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.17674_0.20190701205029.bin.gz
+409        428 Jul 01 2019 20:50:32.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.20858_0.20190701205032.bin.gz
+410        726 Jul 01 2019 20:50:10.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5360_0.20190701205010.bin.gz
+411       3280 Jul 01 2019 20:50:40.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25526_0.20190701205039.bin.gz
+412        655 Jul 02 2019 08:28:58.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24648_9.20190702082858.bin.gz
+413       2899 Jul 01 2019 20:51:42.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5777_0.20190701205142.bin.gz
+414       1738 Jul 01 2019 20:50:38.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25225_0.20190701205038.bin.gz
+415       2119 Jul 01 2019 20:50:40.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26474_0.20190701205040.bin.gz
+416       1688 Jul 02 2019 08:29:04.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5458_0.20190701205141.bin.gz
+417        411 Jul 01 2019 20:50:17.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7892_0.20190701205017.bin.gz
+418       1697 Jul 02 2019 08:29:04.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25864_0.20190701205039.bin.gz
+419       1412 Jul 02 2019 08:29:54.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_0.20190702082954.bin.gz
+420        865 Jul 01 2019 20:50:39.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26274_0.20190701205039.bin.gz
+421       1746 Jul 01 2019 20:50:40.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26628_0.20190701205040.bin.gz
+422       2850 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.27264_0.20190701205041.bin.gz
+423       1760 Jul 01 2019 20:50:40.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.26922_0.20190701205040.bin.gz
+424       1068 Jul 01 2019 20:50:32.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21060_0.20190701205032.bin.gz
+425       6975 Jul 02 2019 08:28:58.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21192_0.20190701205032.bin.gz
+426       1704 Jul 01 2019 20:50:25.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8768_0.20190701205019.bin.gz
+427       1325 Jul 01 2019 20:50:51.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8768_1.20190701205043.bin.gz
+428       1284 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8768_2.20190701205121.bin.gz
+429       6784 Jul 01 2019 20:51:51.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.28235_0.20190701205042.bin.gz
+430       1777 Jul 01 2019 20:50:41.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.27675_0.20190701205041.bin.gz
+431       8956 Jul 01 2019 20:51:21.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.28640_0.20190701205043.bin.gz
+432       1686 Jul 01 2019 20:50:42.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.27998_0.20190701205041.bin.gz
+433        879 Jul 01 2019 20:50:20.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9150_0.20190701205020.bin.gz
+434       1791 Jul 01 2019 20:50:42.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.28340_0.20190701205042.bin.gz
+435       5344 Jul 01 2019 20:51:22.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.29280_0.20190701205045.bin.gz
+436       1876 Jul 01 2019 20:50:43.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.28906_0.20190701205042.bin.gz
+437       1359 Jul 02 2019 08:30:30.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_1.20190702083014.bin.gz
+438       1093 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/droputil_R0-0.8764_2.20190702083057.bin.gz
+439       2592 Jul 02 2019 08:30:11.0000000000 +00:00 /bootflash/tracelogs/emd_R0-0.23644_0.20190702083011.bin.gz
+440       1734 Jul 02 2019 08:30:10.0000000000 +00:00 /bootflash/tracelogs/emd_pmanlog_R0-0.23155_0.20190702083009.bin.gz
+441       4438 Jul 02 2019 08:30:55.0000000000 +00:00 /bootflash/tracelogs/fman_rp_R0-0.24327_0.20190702083016.bin.gz
+442       3644 Jul 03 2019 17:06:55.0000000000 +00:00 /bootflash/tracelogs/hman_R0-0.24496_0.20190702083013.bin.gz
+443       1748 Jul 02 2019 08:30:12.0000000000 +00:00 /bootflash/tracelogs/fman_rp_pmanlog_R0-0.23525_0.20190702083010.bin.gz
+444       1733 Jul 02 2019 08:30:12.0000000000 +00:00 /bootflash/tracelogs/hman_pmanlog_R0-0.24160_0.20190702083012.bin.gz
+445        579 Jul 02 2019 08:30:04.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.17983_0.20190702083004.bin.gz
+446        580 Jul 02 2019 08:30:04.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18265_0.20190702083004.bin.gz
+447        579 Jul 02 2019 08:30:05.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18531_0.20190702083005.bin.gz
+448        581 Jul 02 2019 08:30:05.0000000000 +00:00 /bootflash/tracelogs/inst_issu_check_R0-0.18813_0.20190702083005.bin.gz
+449        430 Jul 02 2019 08:30:07.0000000000 +00:00 /bootflash/tracelogs/inst_issu_switchover_R0-0.20928_0.20190702083007.bin.gz
+450        436 Jul 02 2019 08:29:55.0000000000 +00:00 /bootflash/tracelogs/inst_publish_retrieve_sw_sets_R0-0.9370_0.20190702082955.bin.gz
+451        429 Jul 02 2019 08:30:04.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.17363_0.20190702083004.bin.gz
+452        429 Jul 02 2019 08:30:07.0000000000 +00:00 /bootflash/tracelogs/inst_rollback_timer_R0-0.20881_0.20190702083007.bin.gz
+453        726 Jul 02 2019 08:29:45.0000000000 +00:00 /bootflash/tracelogs/install_engine_R0-0.5366_0.20190702082945.bin.gz
+454        411 Jul 02 2019 08:29:54.0000000000 +00:00 /bootflash/tracelogs/iptbl_R0-0.8979_0.20190702082954.bin.gz
+455        821 Jul 03 2019 17:06:53.0000000000 +00:00 /bootflash/tracelogs/linux_iosd_image_pmanlog_R0-0.24676_9.20190703170653.bin.gz
+456       3269 Jul 02 2019 08:30:14.0000000000 +00:00 /bootflash/tracelogs/lman_R0-0.25556_0.20190702083014.bin.gz
+457       1730 Jul 02 2019 08:30:14.0000000000 +00:00 /bootflash/tracelogs/lman_pmanlog_R0-0.25254_0.20190702083013.bin.gz
+458       3797 Jul 02 2019 22:00:28.0000000000 +00:00 /bootflash/tracelogs/nginx_R0-0.5846_0.20190702083117.bin.gz
+459       1696 Jul 03 2019 17:06:59.0000000000 +00:00 /bootflash/tracelogs/nginx_pmanlog_R0-0.5527_0.20190702083116.bin.gz
+460       2122 Jul 02 2019 08:30:15.0000000000 +00:00 /bootflash/tracelogs/ofa_R0-0.26532_0.20190702083015.bin.gz
+461       1688 Jul 03 2019 17:06:59.0000000000 +00:00 /bootflash/tracelogs/ofa_pmanlog_R0-0.25892_0.20190702083014.bin.gz
+462        411 Jul 02 2019 08:29:52.0000000000 +00:00 /bootflash/tracelogs/oom_R0-0.7896_0.20190702082952.bin.gz
+463        865 Jul 02 2019 08:30:14.0000000000 +00:00 /bootflash/tracelogs/periodic_sh_pmanlog_R0-0.26301_0.20190702083014.bin.gz
+464       4155 Jul 02 2019 08:30:51.0000000000 +00:00 /bootflash/tracelogs/plogd_R0-0.27103_0.20190702083016.bin.gz
+465       1744 Jul 02 2019 08:30:15.0000000000 +00:00 /bootflash/tracelogs/plogd_pmanlog_R0-0.26648_0.20190702083015.bin.gz
+466       2853 Jul 02 2019 08:30:56.0000000000 +00:00 /bootflash/tracelogs/psd_R0-0.27297_0.20190702083016.bin.gz
+467       1757 Jul 02 2019 08:30:15.0000000000 +00:00 /bootflash/tracelogs/psd_pmanlog_R0-0.26954_0.20190702083015.bin.gz
+468       1064 Jul 02 2019 08:30:07.0000000000 +00:00 /bootflash/tracelogs/psvp_R0-0.21088_0.20190702083007.bin.gz
+469       6954 Jul 03 2019 17:06:53.0000000000 +00:00 /bootflash/tracelogs/pvp_R0-0.21220_0.20190702083007.bin.gz
+470       1698 Jul 02 2019 08:29:59.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8772_0.20190702082954.bin.gz
+471       1320 Jul 02 2019 08:30:26.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8772_1.20190702083018.bin.gz
+472       1314 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8772_2.20190702083056.bin.gz
+473        601 Jul 03 2019 17:06:33.0000000000 +00:00 /bootflash/tracelogs/reflector_R0-0.8772_3.20190703170633.bin.gz
+474       6770 Jul 02 2019 08:31:26.0000000000 +00:00 /bootflash/tracelogs/smand_R0-0.28259_0.20190702083018.bin.gz
+475       1772 Jul 02 2019 08:30:17.0000000000 +00:00 /bootflash/tracelogs/smand_pmanlog_R0-0.27703_0.20190702083016.bin.gz
+476       8794 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/smd_R0-0.28661_0.20190702083018.bin.gz
+477       1674 Jul 02 2019 08:30:17.0000000000 +00:00 /bootflash/tracelogs/smd_pmanlog_R0-0.28019_0.20190702083016.bin.gz
+478       1793 Jul 02 2019 08:30:17.0000000000 +00:00 /bootflash/tracelogs/sort_files_by_inode_sh_pmanlog_R0-0.28366_0.20190702083017.bin.gz
+479        885 Jul 02 2019 08:29:54.0000000000 +00:00 /bootflash/tracelogs/tdl_boottime_R0-0.9154_0.20190702082954.bin.gz
+480       5342 Jul 02 2019 08:30:57.0000000000 +00:00 /bootflash/tracelogs/vman_R0-0.29356_0.20190702083023.bin.gz
+481       1867 Jul 02 2019 08:30:18.0000000000 +00:00 /bootflash/tracelogs/vman_pmanlog_R0-0.28937_0.20190702083018.bin.gz
+528  454347452 Feb 01 2018 05:14:01.0000000000 +00:00 /bootflash/csr1000v-universalk9.03.17.00.S.156-1.S-std.SPA.bin
+529  363571180 Feb 01 2018 05:19:58.0000000000 +00:00 /bootflash/csr1000v-universalk9.16.03.03.SPA.bin
+
+This is a list of vxml files located in flash:
+
+508       5098 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/bootstrap.vxml
+511       8836 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_vxml.tcl
+513      10173 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/CVPSelfServiceBootstrap.vxml
+527        598 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/recovery.vxml
+532       5531 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/bootstrap_vb.vxml
+
+This is a list of the CCB files located in flash:
+
+509       5417 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_dial.tcl
+510       6993 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_poll.tcl
+511       8836 Jun 08 2019 07:59:53.0000000000 +00:00 /bootflash/cvp_ccb_vxml.tcl
+
+This is the version of the gateway:
+
+Cisco IOS XE Software, Version 16.06.03
+Cisco IOS Software [Everest], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.6.3, RELEASE SOFTWARE (fc8)
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+
+This checks if all applications loaded correctly
+
+
+ SERVICES (standalone applications):
+  name                      type            description
+
+  ipsla-responder           Tcl Script      builtin:app_test_rcvr_script.tcl  
+  RECAPP                    C Script        builtin:RSession_Service.C  
+  survivability             Tcl Script      flash:survivability.tcl  
+  CALLIndSs_SErviCe         C Script        builtin:CallIndSs_Service.C  
+  traffic                   Tcl Script      flash:traffic.tcl  
+  RetrProxy                 C Script        builtin:RetrievalProxy_Service.C  
+  session                   Tcl Script      builtin:app_session_script.tcl  
+  clid_authen_npw           Tcl Script      builtin:app_clid_authen_npw_script.tcl  
+  app-b-acd-aa              Tcl Script      builtin:app_b_acd_aa_script.tcl  
+  clid_authen_collect       Tcl Script      builtin:app_clid_authen_collect_script.tcl  
+  app-b-acd                 Tcl Script      builtin:app_b_acd_script.tcl  
+  startup_testcall          Tcl Script      flash:startup_testcall.tcl  
+  clid_col_npw_3            Tcl Script      builtin:app_clid_col_npw_3_script.tcl  
+  clid_authen               Tcl Script      builtin:app_clid_authen_script.tcl  
+  clid_col_npw_npw          Tcl Script      builtin:app_clid_col_npw_npw_script.tcl  
+  TOLLFRAUD_APP             C Script        builtin:TollFraud_Service.C  
+  ringtone                  Tcl Script      flash:ringtone.tcl  
+  clid_authen_col_npw       Tcl Script      builtin:app_clid_authen_col_npw_script.tcl  
+  robodest                  Tcl Script      flash:robodest.tcl  
+  ipsla-testcall            Tcl Script      builtin:app_test_place_script.tcl  
+  obdest                    Tcl Script      flash:obdest.tcl  
+  cvperror                  Tcl Script      flash:cvperror.tcl  
+  AFW_THIRD_PARTY_CC        C Script        builtin::Third_Party_CC_Service.C  
+  CTAPP                     C Script        builtin:CallTreatment_Service.C  
+  fax_hop_on                Tcl Script      builtin:app_fax_hop_on_script.tcl  
+  dsapp                     C Script        builtin:DSESS_Service.C  
+  traffic_call              Tcl Script      flash:traffic_call.tcl  
+  Default                   C Script        builtin:Session_Service.C  
+  DEFAULT.C.OLD             CCAPI           Obsolete system session application
+  VOIP HA SESSION APP       CCAPI           VOIP HA SESSION APPLICATION
+
+ PACKAGES:
+  name                      type            description
+
+  chinese                   C Script        builtin:package_chinese.C  
+  ThirdPartyCC              C Script        builtin:Third_Party_CC.C  
+  deviceControl             C Script        builtin:Dev_ctrlSession.C  
+  tcl20base                 C Script        builtin:tcl20base_package.C  
+  destination               C Script        builtin:Destination.C  
+  callindss                 C Script        builtin:CallIndSs.C  
+  spanish                   C Script        builtin:package_spanish.C  
+  media                     C Script        builtin:package_media.C  
+  appcommon                 C Script        builtin:AppCommon.C  
+  medianeg                  C Script        builtin:MediaNeg.C  
+  mediafork                 C Script        builtin:MediaFork.C  
+  callsetup                 C Script        builtin:CallSetup.C  
+  session_xwork             C Script        builtin:Session_XWork.C  
+  callsnr                   C Script        builtin:CallSnr.C  
+  callfeature               C Script        builtin:CallFeature.C  
+  consult                   C Script        builtin:Consult.C  
+  tclmodule                 C Script        builtin:TclModule.C  
+  CallXfor                  C Script        builtin:CallXfor.C  
+  tclcore                   C Script        builtin:tclcore_package.C  
+  xccsession_xwork          C Script        builtin:XCCSession_XWork.C  
+  digitcollect              C Script        builtin:DigitCollect.C  
+  english                   C Script        builtin:package_english.C  
+  httpios                   C Script        builtin:package_httpios.C  
+  mpconf                    C Script        builtin:MPConf.C  
+  preempt                   C Script        builtin:Preempt.C  
+  Retrieval                 C Script        builtin:Retrieval.C  
+  auth                      C Script        builtin:Auth.C  
+  consultresp               C Script        builtin:ConsultResp.C  
+
+
+This shows the version of the tcl file:
+
+# Script last modified by: gcarrive
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: handoff.tcl
+# Script Lock Date: 4/11/2006
+# Script last modified by: pantinor
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: bootstrap.tcl
+# Script Lock Date: 2/6/2007
+# Script last modified by: jbyron
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: cvp_ccb_dial.tcl
+# Script Lock Date: 2/2/2009
+# Script last modified by: jbyron
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: cvp_ccb_poll.tcl
+# Script Lock Date: 2/2/2009
+# Script last modified by: jbyron
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: cvp_ccb_vxml.tcl
+# Script Lock Date: 01/18/2009
+# Script last modified by: pantinor
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: cvperror.tcl
+# Script Lock Date: 7/20/2006
+# Script Creation Date: 10/4/04
+# Script Author: Janet Byron
+# Script Last modified by: Janet Byron
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: CVPSelfService.tcl
+# Script Lock Date:01/21/2009
+# Script last modified by: chleblan
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: ringtone.tcl
+# Script Lock Date: 4/24/2008
+# Script last modified by: vinachiy
+# Script Version: CVP_12_0_1_0_0_0_229
+# Script Name: survivability.tcl
+# Script Lock Date: 21/04/2015
+
+Here is the list of dial peers on the gateway:
+
+dial-peer voice 4441300 voip
+ description Robot agent physical phone DNs (UCM E&C remote destinations)
+ service robodest
+ incoming called-number 44413..
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 919191 voip
+ description CVP SIP ringtone dial-peer
+ service ringtone
+ incoming called-number 91919191
+ voice-class sip rel1xx disable
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 929292 voip
+ description CVP SIP error dial-peer
+ service cvperror
+ incoming called-number 92929292
+ voice-class sip rel1xx disable
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 7700 voip
+ description Video calls to CVP
+ service survivability
+ destination-pattern 77..
+ video codec h264
+ session protocol sipv2
+ session target ipv4:198.18.133.13
+ session transport tcp
+ incoming called-number 77..
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 9000 voip
+ description Outbound SIP Dialer destination simulator
+ service obdest
+ session protocol sipv2
+ incoming called-number 0T
+ voice-class sip rel1xx require "100rel"
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 1000 voip
+ description Transfer outbound dialer calls to agents
+ destination-pattern 1...
+ session protocol sipv2
+ session target ipv4:198.18.133.3:5060
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 9100 voip
+ description Outbound SIP Dialer destination simulator US numbers
+ service obdest
+ session protocol sipv2
+ incoming called-number 1..........
+ voice-class sip rel1xx require "100rel"
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 9900 voip
+ description Outbound to PSTN
+ destination-pattern 9T
+ session protocol sipv2
+ session target ipv4:198.18.133.3
+ incoming called-number 9T
+ voice-class sip rel1xx require "100rel"
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+ no supplementary-service sip refer
+dial-peer voice 7899 voip
+ description Startup wake up call DN to VVB
+ destination-pattern 7899
+ session protocol sipv2
+ session target ipv4:198.18.133.143
+ session transport tcp
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 6661111 voip
+ destination-pattern 6661111T
+ session protocol sipv2
+ session target ipv4:198.18.133.13:5060
+ dtmf-relay rtp-nte sip-kpml
+ codec g711ulaw
+ no vad
+dial-peer voice 87777777 voip
+ description Outbound to UCM extensions
+ destination-pattern 8.......
+ session protocol sipv2
+ session target ipv4:198.18.133.3
+ incoming called-number 8.......
+ voice-class sip rel1xx require "100rel"
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+ no supplementary-service sip refer
+dial-peer voice 7801 voip
+ description Traffic generator DNs to CVP
+ max-conn 30
+ destination-pattern 780[1-5]
+ session protocol sipv2
+ session target ipv4:198.18.133.13
+ session transport tcp
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 6000 voip
+ description Inbound PSTN to CVP
+ service survivability
+ destination-pattern 60..
+ session protocol sipv2
+ session target ipv4:198.18.133.13
+ session transport tcp
+ incoming called-number 60..
+ voice-class sip profiles 103
+ voice-class sip midcall-signaling block
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 7019 voip
+ description Inbound PSTN to CVP
+ service survivability
+ destination-pattern 7019
+ session protocol sipv2
+ session target ipv4:198.18.133.13
+ session transport tcp
+ incoming called-number 7019
+ voice-class sip profiles 103
+ voice-class sip midcall-signaling block
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 7800 voip
+ description Inbound PSTN to CVP
+ service survivability
+ destination-pattern 7800
+ session protocol sipv2
+ session target ipv4:198.18.133.13
+ session transport tcp
+ incoming called-number 7800
+ voice-class sip profiles 103
+ voice-class sip midcall-signaling block
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ no vad
+dial-peer voice 40000 voip
+ description Transfer outbound dialer calls to cxdemo agent extensions
+ destination-pattern 4....
+ session protocol sipv2
+ session target ipv4:198.18.133.3:5060
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 4440000 voip
+ description Virtual extensions for cxdemo
+ service virtual_extensions
+ incoming called-number 444....
+ dtmf-relay rtp-nte
+ codec g711ulaw
+dial-peer voice 4540000 voip
+ description Virtual extensions for cxdemo
+ service virtual_extensions
+ incoming called-number 454....
+ dtmf-relay rtp-nte
+ codec g711ulaw
+
+Here is a status of the dial-peers
+dial-peer hunt 0
+             AD                                    PRE PASS SESS-SER-GRP\  OUT 
+TAG    TYPE  MIN  OPER PREFIX    DEST-PATTERN      FER THRU SESS-TARGET    STAT PORT    KEEPALIVE    VRF
+44413- voip  up   up                                0  syst                     		     NA                  
+00                                                                             
+91919- voip  up   up                                0  syst                     		     NA                  
+1                                                                              
+92929- voip  up   up                                0  syst                     		     NA                  
+2                                                                              
+7700   voip  up   up             77..               0  syst ipv4:198.18.133.13  		     NA                  
+9000   voip  up   up                                0  syst                     		     NA                  
+1000   voip  up   up             1...               0  syst ipv4:198.18.133.3:50		     NA                  
+9100   voip  up   up                                0  syst                     		     NA                  
+9900   voip  up   up             9T                 0  syst ipv4:198.18.133.3   		     NA                  
+7899   voip  up   up             7899               0  syst ipv4:198.18.133.143 		     NA                  
+66611- voip  up   up             6661111T           0  syst ipv4:198.18.133.13:5		     NA                  
+11                                                                             
+87777- voip  up   up             8.......           0  syst ipv4:198.18.133.3   		     NA                  
+777                                                                            
+7801   voip  up   up             780[1-5]           0  syst ipv4:198.18.133.13  		     NA                  
+6000   voip  up   up             60..               0  syst ipv4:198.18.133.13  		     NA                  
+7019   voip  up   up             7019               0  syst ipv4:198.18.133.13  		     NA                  
+7800   voip  up   up             7800               0  syst ipv4:198.18.133.13  		     NA                  
+40000  voip  up   up             4....              0  syst ipv4:198.18.133.3:50		     NA                  
+44400- voip  up   up                                0  syst                     		     NA                  
+00                                                                             
+45400- voip  up   up                                0  syst                     		     NA                  
+00                                                                             
+ For server-grp details please execute command:show voice classserver-group <tag_id>
+
+Here is a status of the voice ports
+                                           IN       OUT
+PORT            CH   SIG-TYPE   ADMIN OPER STATUS   STATUS   EC
+=============== == ============ ===== ==== ======== ======== ==
+ 
+PWR FAILOVER PORT        PSTN FAILOVER PORT
+=================        ==================
+
+
+Here is a status of the http cache
+HTTP Client cached information
+==============================
+Maximum memory pool allowed for HTTP Client caching = 10000 K-bytes (default)
+Maximum file size allowed for caching = 50 K-bytes (default)
+Total memory used up for Cache = 0 Bytes
+Message response timeout = 10 secs
+Total cached entries     = 0
+Total non-cached entries = 0
+
+
+Check http client stats for possible errors or timeouts
+If so, could be device located in network between HTTP server and HTTP client
+
+    HTTP Client Statistics:
+    =======================
+Elapsed time: 37634657 msec
+
+Load Count:
+  total load count = 7782
+  total byte count = 58129
+  largest file size = 396 bytes
+  smallest file size = 0 bytes
+
+Server Response Time to Connect:
+  longest response to connect = 16 msec
+  shortest response to connect = 0 msec
+
+Server Response Time to Load:
+  longest response to load = 367 msec
+  shortest response to load = 30 msec
+
+File Load Time from Server:
+  longest load time = 3 msec
+  shortest load time = 0 msec
+
+Server Connection Count:
+  max connections = 6
+  established connections = 5412
+
+Load Rate:
+  1 hour : 0 bytes
+  1 min  : 0 bytes
+  1 sec  : 0 bytes
+  1 msec : 0.00 bytes
+
+Individual Counts:
+  app_requests = 7782                     app_callbacks = 7782
+  200_OK_rsp = 7782                       other_rsp = 0
+  total_errors = 0                        client_timeouts = 0
+  client_errs = 0                         connect_errs/_timeouts = 0
+  msg_decode_errs = 0                     msg_encode_errs = 0
+  msg_xmit_errs = 0                       write_Q_full = 0
+  socket_rcv_errs = 0                     supported_method_errs = 0
+  retries = 0                             late_responses = 0
+  out_of_memory = 0                       mem_reallocs = 0
+  msg_malloced = 0                        event_malloced = 0
+  cache_freed_by_ager = 0             
+
+Best practice for CVP has bind commands under voice service voip
+The BIND command is missing
+
+
+Best practice for CVP with a sip proxy
+
+
+Best practice for CVP - has mediaserver and mediaserverbackup
+The IP HOST command is missing
+
+
+Best practice for CVP with Enhanced UUI Feature turned on
+ signaling forward unconditional
+
+Best practice for Voice Service Voip - trusted IP
+ no ip address trusted authenticate
+
+Best practice for CVP with a gateway - no logging
+no logging console
+
+Best practice for CVP with a gateway - ip cef
+The IP CEF command is missing
+
+
+Best practice for CVP with a gateway - voice rtp
+The VOICE RTP send-recv command is missing
+
+
+Best practice for CVP with a gateway - signaling forward
+ signaling forward unconditional
+
+Best practice for CVP with a gateway - min-se
+The MIN SE command is missing
+
+
+Best practice for CVP with a gateway - timer receive-rtcp
+The RECEIVE RTCP command is missing
+
+
+Best practice for CVP with a gateway - ip rtcp
+ip rtcp report interval 60000 
+
+Best practice for CVP with a gateway - reason-header
+The REASON HEADER OVERRIDE command is missing
+
+
+Best practice for CVP with a vxml gateway - 4 ivr commands
+The IVR commands are missing
+
+
+Best practice for CVP with a vxml gateway - 3 mrcp commands
+The MRCP commands are missing
+
+
+Best practice for CVP with a vxml gateway - 2 rtsp commands
+The RTSP commands are missing
+
+
+Best practice for CVP with a vxml gateway - 1 vxml tree
+The VXML TREE command is missing
+
+
+Best practice for CVP with a vxml gateway - 5 http client commands
+The HTTP CLIENT commands are missing
+
+
+Best practice for CVP from OAMP template gw - ip-source route
+The IP SOURCE ROUTE command is missing
+
+
+Best practice for CVP from OAMP template gw - header-passing
+  header-passing
+
+Best practice for CVP from OAMP template gw - codec preference
+
+
+Best practice for CVP from OAMP template gw - sip-ua
+
+
+Best practice for CVP from OAMP template gw - retry invite 2
+The RETRY INVITE command is missing
+
+
+Best practice for CVP from OAMP template gw - retry bye 2
+The RETRY BYE command is missing
+
+
+Best practice for CVP from OAMP template gw - timers expires 
+The TIMERS EXPIRES command is missing
+
+
+Best practice for CVP from OAMP template vxml gw - ip routing 
+The IP ROUTING command is missing
+
+
+Best practice for CVP from OAMP template vxml gw - asr-server 
+The ASR SERVER command is missing
+
+
+Best practice for CVP from OAMP template vxml gw - tts-server 
+The TTS SERVER command is missing
+
+
+Best practice for CVP from OAMP template vxml gw - vxml audioerror 
+The VXML AUDIOERROR command is missing
+
+
+Best practice for CVP from OAMP template vxml gw - vxml version 2 
+The VXML VERSION command is missing
+
+
+Best practice for CVP from OAMP template vxml gw -  
+% Incomplete command.
+
+
+Check for network based recording on gateway to CUCM
+uc wsapi
+
+
+Check for NTP Servers
+ntp server 198.18.128.1
+Check SIP Status
+SIP User Agent Status
+SIP User Agent for UDP : ENABLED
+SIP User Agent for TCP : ENABLED
+
+SIP User Agent for TLS over TCP : ENABLED
+SIP User Agent bind status(signaling): DISABLED 
+SIP User Agent bind status(media): DISABLED 
+SIP early-media for 180 responses with SDP: ENABLED
+SIP max-forwards : 70
+SIP DNS SRV version: 2 (rfc 2782)
+NAT Settings for the SIP-UA
+Role in SDP: NONE
+Check media source packets: DISABLED
+Maximum duration for a telephone-event in NOTIFYs: 2000 ms
+SIP support for ISDN SUSPEND/RESUME: ENABLED
+Redirection (3xx) message handling: ENABLED
+Reason Header will override Response/Request Codes: ENABLED
+Out-of-dialog Refer: DISABLED
+Presence support is DISABLED
+protocol mode is ipv4
+
+SDP application configuration:
+ Version line (v=) required
+ Owner line (o=) required
+ Timespec line (t=) required
+ Media supported: audio video image 
+ Network types supported: IN 
+ Address types supported: IP4 IP6 
+ Transport types supported: RTP/AVP udptl 
+ Extra fmtp params supported: none
+ Application specified attributes supported: none
+
+
+
+Check CPU
+                                                                  
+                                                                  
+                                                                  
+      111111111111111111                                          
+      222111110000000000999996666666666666666666655555666664444455
+  100                                                           
+   90                                                           
+   80                                                           
+   70                                                           
+   60                                                           
+   50                                                           
+   40                                                           
+   30                                                           
+   20                                                           
+   10 *****************************************************     
+     0....5....1....1....2....2....3....3....4....4....5....5....6
+               0    5    0    5    0    5    0    5    0    5    0
+               CPU% per second (last 60 seconds)
+
+                                                                  
+                                                                  
+                                                                  
+                                                                  
+      776766667788678787886667777787787788777888777887888887786665
+  100                                                           
+   90                                                           
+   80                                                           
+   70                                                           
+   60                                                           
+   50                                                           
+   40                                                           
+   30                                                           
+   20                                                           
+   10 ########################################################**
+     0....5....1....1....2....2....3....3....4....4....5....5....6
+               0    5    0    5    0    5    0    5    0    5    0
+               CPU% per minute (last 60 minutes)
+              * = maximum CPU%   # = average CPU%
+
+                                                                              
+                                                                              
+                                                                              
+               6                                                              
+      8899966770                                                              
+  100                                                                       
+   90                                                                       
+   80                                                                       
+   70                                                                       
+   60          *                                                            
+   50          *                                                            
+   40          *                                                            
+   30          *                                                            
+   20          *                                                            
+   10 #####*****                                                            
+     0....5....1....1....2....2....3....3....4....4....5....5....6....6....7..
+               0    5    0    5    0    5    0    5    0    5    0    5    0  
+                   CPU% per hour (last 72 hours)
+                  * = maximum CPU%   # = average CPU%
+
+
+
+>>>>>>>>> End <<<<<<<<<
+
+This report ended at :2019-11-18 08:22:39.969795
+
+Total time to run this report was 0:00:53.612673
+
