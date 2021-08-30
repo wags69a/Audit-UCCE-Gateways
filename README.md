@@ -29,9 +29,9 @@ Try is script in your lab or dCloud first so you can get used to it. Do not try 
 
 #Step by step
 1) Down load Audit-UCCE-Gateways code from GitHub.
-2) Import requirements
-3) Verify connection to the gateways that you want to audit.
-4) Put the IP address, username and password in the script.
+2) PIP import requirements.txt
+3) Verify connection to the gateways that you want to audit. (VPN)
+4) Put the UCCE Gateway IP address, username and password in the script.
 5) Run the script
 6) Troubleshoot any access errors.
 7) Look at the results via notepad.
