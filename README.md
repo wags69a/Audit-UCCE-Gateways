@@ -10,14 +10,20 @@ This python code is written in 3.7. Put it on a server that has access to the ga
 #Usage
 This code has been tested in Cisco dCloud and other customer environments.
 
+Added user input function so that user can put in their IP address, userID and password.
+
+The AIDE agent has been added too, put in the Cisco PID of the project or 000000 if not Cisco.
+
 #DevNet Sandbox
-At the time of this writting, there was no Devnet sandbox for UCCE, however as said above, you can run this on a lab.
+Cisco dCloud was used to run this version.
 
 #Known issues
 The script is long and it could fail in different places, but error handling has been included for the errors I saw when runing the lab. The first error is having no access to the gateways. You need the dCloud VPN and if you didn't I told the error message to check the VPN. You can modify this message to your situation. This script also output a file and you might need permissions to do this on the customer network.
 
 #Getting help 
 Contact the owner if he is not too busy.
+
+Use PIP install to add all libraries.
 
 #Credits and references
 UCCE 10 and 11 configuration and staging guide.
